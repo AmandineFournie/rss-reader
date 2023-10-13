@@ -1,8 +1,9 @@
 {
-  "name": "rss-reader",
+  "name": "OED Dark Mode",
   "version": "1.0.0",
   "private": true,
-  "description": "rss-reader",
+  "homepage": "https://dark-mode.obs-ed.fr/",
+  "description": "OED Dark Mode",
   "author": "AmandineFournie",
   "keywords": [
     "gatsby"
@@ -16,6 +17,7 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.3.0",
+    "build": "^0.1.4",
     "gatsby": "^5.12.4",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-image": "^3.12.0",
