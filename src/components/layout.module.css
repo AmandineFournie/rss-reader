@@ -1,11 +1,15 @@
+.body{
+  background-color: rgb(51 65 85);
+  font-family: "Open Sans";
+}
 .container {
     margin: auto;
-    max-width: 500px;
-    font-family: sans-serif;
-  }
+    max-width: 1000px;
+    font-family: "Open Sans";
+    }
   
   .heading {
-    color: rebeccapurple;
+    color: rgb(177, 125, 166);
   }
   .nav-links {
     display: flex;
@@ -24,3 +28,81 @@
     font-weight: 700;
     margin: 3rem 0;
   }
+  .fgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    justify-items: center;
+  }
+  
+  .fitem {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 4px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .fitem:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  a {
+  text-decoration: none;
+  color : rgb(0, 0, 0);
+  }
+
+  .containimage {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+  }
+          /* ---- particles.js container ---- */
+          #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #232741;
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: 20%;
+            background-position: 50% 50%;
+          }
+          /* ---- stats.js ---- */
+          .count-particles {
+            background: #000022;
+            position: absolute;
+            top: 48px;
+            left: 0;
+            width: 80px;
+            color: #13E8E9;
+            font-size: .8em;
+            text-align: left;
+            text-indent: 4px;
+            line-height: 14px;
+            padding-bottom: 2px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: bold;
+          }
+          .js-count-particles {
+            font-size: 1.1em;
+          }
+          #stats, .count-particles {
+            -webkit-user-select: none;
+            margin-top: 5px;
+            margin-left: 5px;
+          }
+          #stats {
+            border-radius: 3px 3px 0 0;
+            overflow: hidden;
+          }
+          .count-particles {
+            border-radius: 0 0 3px 3px;
+          }  
+  
+  

@@ -21,6 +21,7 @@ const Header = () => {
     <header>
       {/* Step 3: Use the data in your component */}
       <h1>{data.site.siteMetadata.title}</h1>
+      <p>essai pour voir si le header est là</p>
     </header>
   )
 }
