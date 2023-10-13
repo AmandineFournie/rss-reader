@@ -43,10 +43,10 @@ const Layout = ({ pageTitle, children }) => {
                   <p class="inline-block mr-4 min-h-[1em] w-0.5 self-stretch bg-slate-300 opacity-100 dark:opacity-50"></p>              
               </li>
               <li>
-                  <a href="#" class="mr-4 text-base font-medium text-slate-500 hover:text-slate-700 md:mr-6">Light Mod</a>
+                  <a href="#" class="mr-4 text-base font-medium text-slate-500 hover:text-slate-700 md:mr-6">Light Mode</a>
               </li>
               <li>
-                  <a href="#" class="mr-4 text-base font-medium text-slate-500 hover:text-slate-700 md:mr-6">Dark Mod</a>
+                  <a href="#" class="mr-4 text-base font-medium text-slate-500 hover:text-slate-700 md:mr-6">Dark Mode</a>
               </li>
 
           </ul>
