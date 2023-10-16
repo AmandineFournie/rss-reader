@@ -33,15 +33,49 @@ const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
 
-      <h1 className="text-3xl font-bold text-slate-300 py-9">
+      <h1 className="text-3xl font-bold text-slate-700 py-9">
         Revue de presse
       </h1>
+
+      <section class="text-gray-600 body-font bg-white dark:bg-slate-800 rounded-2xl my-5">
+    <div class="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center">
+        <div
+            class="lg:flex-grow mt-5 md:mt-0   md:w-1.5/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1
+                class="text-2xl font-bold leading-9 tracking-tight mb-3 text-grey-700 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
+                Revue de presse 
+            </h1>
+
+            <p class="mb-8 md:pl-0  pl-2 pr-2 leading-relaxed dark:text-gray-300">
+            L'exploration anxiogène des informations est parfois déconcertante dans notre monde en constante évolution. 
+            <br/>
+            <br/>
+            Cette revue de presse propose un tour d'horizon de l'actualité française et internationale pour mettre en lumière les sujets suscitant des préoccupations, soulevant des risques et des défis auxquels nous pourrions bientôt être confrontés. 
+            <br/>
+            <br/>
+            N'hésitez pas à prendre du recul et à relativiser les informations que vous y trouvez            </p>
+            <div class="flex justify-center">
+                <a href="#"
+                    class="inline-flex text-white bg-slate-600 border-0 py-2 px-6 focus:outline-none hover:bg-slate-600 rounded text-lg">Archives </a>
+                <a href="#"
+                    class="ml-4 inline-flex text-slate-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">Light Mode</a>
+            </div>
+        </div>
+        <div class="lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6">
+        </div>
+    </div>
+</section>
+
+<h1 className="text-3xl font-bold text-slate-200 py-9"> Les 18 dernières informations selectionnées </h1>
+
+
+  
       <div className="bg-slate-700">
         <ul className="pt-7 grid grid-cols-3 gap-8">
           
           {data.allFeedVeille.nodes.map((node) => (
 
-        <li key={node.title} className="relative bg-gradient-to-r from-slate-500 to-slate-300 shadow-md p-7 rounded-3xl transform transition-transform duration-400 ease-in-out hover:-translate-y-1 hover:shadow-lg"  >
+        <li key={node.title} className="relative bg-gradient-to-r from-slate-500 to-slate-300 shadow-md p-7 rounded-2xl transform transition-transform duration-400 ease-in-out hover:-translate-y-1 hover:shadow-lg"  >
         <a href={node.link}>
           <div className="absolute inset-0 bg-white border border-slate-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:rotate-0 sm:rounded-3xl" style={{ zIndex: -10 }}></div>
           <h3 className="text-l font-semibold text-slate-700 pb-3">{node.title}</h3>
@@ -83,7 +117,7 @@ const IndexPage = () => {
         <div class="relative px-10 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
           <div class="max-w-md mx-auto">
             <div>
-              <h1 class="pb-6 text-3xl font-semibold text-slate-700">Une question ?</h1>
+              <h1 class="pb-6 text-3xl font-semibold text-slate-800">Une question ?</h1>
             </div>
             <div class="divide-y divide-slate-200">
               <div class="py-3 text-base leading-6 space-y-2 text-gray-700 sm:text-lg sm:leading-7">

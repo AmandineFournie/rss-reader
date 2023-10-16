@@ -1,10 +1,14 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
-    title: "Rss Reader",
-    siteUrl: `https://www.yourdomain.tld`,
+    title: "OED Dark Mode",
+    siteUrl: `https://dark-mode.obs-ed.fr/`,
   },
   plugins: [
     {
@@ -33,13 +37,13 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
     {
-      resolve: `gatsby-source-rss-feed`,
+      resolve: `gatsby-source-rss-feeds`,
       options: {
         url: `https://www.inoreader.com/stream/user/1005455318/tag/veille?n=999`,
         name: `Veille`,
         // Optional
         // Read parser document: https://github.com/bobby-brennan/rss-parser#readme
       }
-    }, 
+    },    
   ],
 };

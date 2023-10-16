@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navigation = () => {
   return (
-    <nav className="bg-slate-100 dark:bg-slate-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <nav className="bg-white dark:bg-slate-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-1 md:order-1">
         <a href="http://dark-mode.obs-ed.fr/" className="flex items-center">
           <img src="https://www.obs-ed.fr/wp-content/uploads/2023/10/DM-ObsED.png" className="h-20 pl-10" alt=" Logo" />
@@ -26,7 +26,7 @@ const Navigation = () => {
  
         <div className="items-center hidden w-full md:flex md:w-auto md:order-2" id="navbar-sticky">
         <div className="flex justify-end w-full">    
-        <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-slate-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-slate-100 dark:bg-slate-800 md:dark:bg-slate-900 dark:border-gray-700 justify-end">
+        <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-white rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white-100 dark:bg-slate-800 md:dark:bg-slate-900 dark:border-gray-700 justify-end">
             <li>
               <a href="/" className="block py-3 pl-3 pr-4 text-base font-medium text-slate-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-900 md:p-0 md:dark:hover:text-slate-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">INFOS</a>
             </li>
